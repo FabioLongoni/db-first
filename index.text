@@ -1,0 +1,22 @@
+Database concessionara auto usate 
+
+NOME TABELLA : AUTO USATE
+
+id                      BIGINT               PK: AUTO_INCREMENT, UNIQUE, NOTNULL
+numero_telaio           VARCHAR(17)          UNIQUE, NOTNULL
+marca                   VARCHAR(100)         NOTNULL
+modello                 VARCHAR(100)         NOTNULL
+numero_targa            VARCHAR(7)           UNIQUE, NOTNULL
+anno_di_produzione      YEAR                 NOTNULL
+luogo_di_produzione     VARCHAR(50)          NULLABLE 
+prezzo_intero           MEDIUMINT            NULLABLE 
+prezzo_di_mercato       MEDIUMINT            NOTNULL
+km_percorsi             MEDIUMINT            NOTNULL
+numero_porte            TINYINT              NOTNULL
+numero_passeggeri       TINYINT              NOTNULL
+carburante              VARCHAR(30)          NOTNULL
+cambio                  VARCHAR(20)          NOTNULL
+numero_proprietari      TINYINT              NULLABLE 
+classe_inquinamento     TINYINT              NOTNULL
+consumo_medio           FLOAT(4,2)           NULLABLE
+descrizione             TEXT                 NULLABLE   
